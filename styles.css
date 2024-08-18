@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+
+    --ff-base: "Outfit", sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-paragraph: 15px;
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-base);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-regular);
+    color: var(--Slate-900);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    min-height: 100vh;
+    background-color: var(--Slate-300);
+}
+
+.qr-card{
+    max-width: 320px;
+    justify-self: center;
+    display: grid;
+    gap: .5rem;
+    padding: .75rem;
+    background-color: var(--White);
+
+    border-radius: 1rem;
+    margin: 0 1em;
+
+    text-align: center;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+img{
+    max-width: 100%;
+
+    border-radius: inherit;
+}
+
+.text-content{
+    padding: .75rem;
+}
+
+h1{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: var(--fw-bold);
+}
+
+p{
+    margin: 1rem 0;
+    color: var(--Slate-500);
+    font-size: var(--fs-paragraph);
+    line-height: 19px;
+    letter-spacing: 0.19px;
+}
+
+/* these are styles for the footer  */
+.attribution { font-size: 11px; text-align: center; grid-row: 2; margin: 2em auto; }
+.attribution a { color: hsl(228, 45%, 44%); }
